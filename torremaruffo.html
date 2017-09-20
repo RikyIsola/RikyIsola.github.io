@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<link href="css/css.css"rel="stylesheet"/>
+  </head>
+  <body class="SFONDO">
+	<div class="SFONDO">
+      <h1>ISLAND</h1>
+	  <div class="INFO">
+		<a id="CONTATTI"onclick="redirect(1)"></a>
+		<a id="HOME"onclick="redirect(2)"></a>
+		<a id="INFO"onclick="redirect(0)"></a>
+	  </div>
+	  <span id="ID"class="LUNGO"></span>
+	  <div class="IMMAGINI"><img src="immagini/torremaruffo1.png"id="IMMAGINE1"/></div>
+	  <div class="IMMAGINI"><img src="immagini/torremaruffo2.png"id="IMMAGINE2"/></div>
+	  <img src="immagini/googleplay.png"id="GOOGLE"/>
+	  <h1>ISLAND</h1>
+	  <script type="text/javascript"src="js/js.js"></script>
+	  <script>
+		var immagine1=document.getElementById("IMMAGINE1");
+        var immagine2=document.getElementById("IMMAGINE2");
+        var google=document.getElementById("GOOGLE");
+        immagine1.style.width="100%";
+        immagine2.style.width="100%";
+        google.style.width="50%";
+        immagine1.style.height=immagine1.offsetWidth+"px";
+        immagine2.style.height=immagine2.offsetWidth+"px";
+        google.style.height=google.offsetWidth/3+"px";
+		google.onclick=function()
+		{
+		  window.location.replace("http://play.google.com/store/apps/details?id=com.island.maruffo");
+		};
+		var info=["ABBIAMO SVILUPPATO UN GIOCO PER SPONSORIZZARE TORRE MARUFFO A GENOVA","WE DEVELOPED A GAME TO SPONSOR TORRE MARUFFO IN GENOVA"];
+		document.getElementById("ID").innerHTML=info[window.lingua];
+	  </script>
+	</div>
+  </body>
+</html>

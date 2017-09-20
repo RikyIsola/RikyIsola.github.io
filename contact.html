@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<link href="css/css.css"rel="stylesheet"/>
+  </head>
+  <body class="SFONDO">
+	<div class="SFONDO">
+      <h1>ISLAND</h1>
+	  <div class="INFO">
+		<a id="CONTATTI"class="ATTIVO"onclick="redirect(1)"></a>
+		<a id="HOME"onclick="redirect(2)"></a>
+		<a id="INFO"onclick="redirect(0)"></a>
+	  </div>
+	  <span id="CONTACT"class="LUNGO"></span>
+	</div>
+	<script type="text/javascript"src="js/js.js"></script>
+	<script>
+	  var info=["PUOI CONTATTARCI MANDANDO UNA MAIL A riky.isola@gmail.com","YOU CAN CONTACT US SENDING AN EMAIL TO riky.isola@gmail.com"];
+	  document.getElementById("CONTACT").innerHTML=info[window.lingua];
+	</script>
+  </body>
+</html>

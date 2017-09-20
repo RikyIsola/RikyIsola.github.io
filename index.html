@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<link href="css/css.css"rel="stylesheet"/>
+  </head>
+  <body class="SFONDO"id="ABOUT">
+	<div class="SFONDO">
+      <h1>ISLAND</h1>
+	  <div class="INFO">
+		<a id="CONTATTI"onclick="redirect(1)"></a>
+		<a id="HOME"class="ATTIVO"onclick="redirect(2)"></a>
+		<a id="INFO"onclick="redirect(0)"></a>
+	  </div>
+	  <div id="IMMAGINI1"class="IMMAGINI"></div>
+	  <div id="IMMAGINI2"class="IMMAGINI"></div>
+	  <h1>ISLAND</h1>
+	</div>
+	<script type="text/javascript"src="js/js.js"></script>
+	<script>
+	  function immagine(id)
+      {
+	    var link=null;
+	    if(id==0)link="torremaruffo.html";
+	    else if(id==1)link="starbattle.html";
+	    //else link="battagliamagica.html";
+	    if(link!=null)window.location.replace(link);
+      }
+      var immagini=["torremaruffo.png","starbattle.png",null];
+      var html1="";
+      var html2="";
+	  var info=["ARRIVA PRESTO","COMING SOON"];
+	  for(var a=0;a<immagini.length;a++)
+      {
+	    var testo="";
+		var aggiunta="";
+		if(immagini[a]!=null)aggiunta="id=\"IMMAGINE"+a+"\"style=\"background-image:url(immagini/"+immagini[a]+");\"";
+	    else testo=info[window.lingua];
+	    var testo="<span "+aggiunta+"onclick=\"immagine("+a+")\"class=\"IMMAGINE\"/>"+testo+"</span>";
+	    if(a%2==0)html1+=testo;
+	    else html2+=testo;
+      }
+      document.getElementById("IMMAGINI1").innerHTML=html1;
+      document.getElementById("IMMAGINI2").innerHTML=html2;
+      for(var a=0;a<immagini.length;a++)if(immagini[a]!=null)
+      {
+	      var o=document.getElementById("IMMAGINE"+a);
+	      o.style.height=o.offsetWidth+"px";
+      }
+	</script>
+  </body>
+</html>		
