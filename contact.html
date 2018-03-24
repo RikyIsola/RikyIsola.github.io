@@ -11,7 +11,7 @@
 				<a id="home"href="index.html">HOME</a>
 				<a id="about"href="about.html">ABOUT</a>
 			</div>
-			<p>
+			<p id="text">
 				YOU CAN SEND AN EMAIL TO 
 				<a href="http://riky.isola@gmail.com">THIS</a>
 				LINK
@@ -20,4 +20,13 @@
 		</div>
 	</body>
 	<script src="js/scripts.js"></script>
+	<script>
+		if(document.it)
+		{
+			document.getElementById("text").innerHTML=
+			"POTETE INVIARE UNA MAIL A "+
+			"<a href=\"http://riky.isola@gmail.com\">QUESTO</a>"+
+			"LINK";
+		}
+	</script>
 </html>

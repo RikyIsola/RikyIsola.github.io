@@ -11,8 +11,8 @@
 				<a id="home"href="index.html">HOME</a>
 				<a id="about"href="about.html">ABOUT</a>
 			</div>
-			<p>
-				STAR BATTLE IS A SIMPLE GAME
+			<p id="text">
+				STAR BATTLE IS A SIMPLE GAME ABOUT SPACE BATTLES
 			</p>
 			<span><img src="images/starbattle1.png"/></span>
 			<span><img src="images/starbattle2.png"/></span>
@@ -20,4 +20,11 @@
 		</div>
 	</body>
 	<script src="js/scripts.js"></script>
+	<script>
+		if(document.it)
+		{
+			document.getElementById("text").innerHTML=
+			"STAR BATTLE &Eacute UN SEMPLICE GIOCO NELLO SPAZIO";
+		}
+	</script>
 </html>
