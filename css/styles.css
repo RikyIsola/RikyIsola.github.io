@@ -4,7 +4,6 @@ body
 	margin:0pt;
 	text-align:center;
 	font-family:"serif";
-	background-color:LightBlue;
 	/*max-width:320pt;*/
 }
 div
@@ -14,6 +13,7 @@ div
 	border-width:20pt;
 	border-radius:10%;
 	border-color:Blue;
+	background-color:LightBlue;
 }
 img
 {
