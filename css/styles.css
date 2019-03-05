@@ -32,15 +32,6 @@ a
 	color:DarkBlue;
 	padding:1%;
 }
-a.download
-{
-	border-width:1pt;
-    border-style:ridge;
-    color:White;
-	border-radius:10%;
-	border-color:Black;
-	background-color:Blue;
-}
 a:active
 {
 	background-color:Blue;
