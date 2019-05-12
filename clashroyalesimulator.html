@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-	<link href="css/styles.css"rel="stylesheet"/>
-	<link rel="icon"type="image/png"href="images/island.png"/>
-	<title>ISLAND</title>
-  </head>
-  <body>
-	<div align="center">
-	  <h1>ISLAND</h1>
-	  <div>
-		<a id="contact"href="contact.html">CONTACT</a>
-		<a id="home"href="index.html">HOME</a>
-		<a id="about"href="about.html">ABOUT</a>
-	  </div>
-	  <p id="text">
-		I made this game in the name of god.
-	  </p>
-	  <span><img src="images/clashroyalesimulator1.png"/></span>
-	  <span><img src="images/clashroyalesimulator2.png"/></span>
-	  <a href="https://github.com/RikyIsola/RikyIsola.github.io/releases/download/1.0/clashroyalesimulator2.apk"download>Download Latest</a>
-	  <a href="https://github.com/RikyIsola/RikyIsola.github.io/releases/download/1.0/clashroyalesimulator1.apk"download>Download Old</a>
-	  <h1>ISLAND</h1>
-	</div>
-  </body>
+	<head>
+		<link href="css/styles.css"rel="stylesheet"/>
+		<link rel="icon"type="image/png"href="images/island.png"/>
+		<title>ISLAND</title>
+		<link href='https://fonts.googleapis.com/css?family=ABeeZee'rel='stylesheet'>
+	</head>
+	<body>
+		<img class="island"src="images/island.png"/>
+		<div class="home">
+			<a id="contact"href="contact.html">CONTACT</a>
+			<a id="home"href="index.html">HOME</a>
+			<a id="about"href="about.html">ABOUT</a>
+	  	</div>
+	  	<p id="text">Clash royale simulator is a free copy of the famous game clash royale.</p>
+		<span><img src="images/clashroyalesimulator1.png"/></span>
+		<span><img src="images/clashroyalesimulator2.png"/></span>
+		<a href="https://github.com/RikyIsola/RikyIsola.github.io/releases/download/1.0/clashroyalesimulator2.apk"download>Download Latest</a>
+		<br/>
+		<a href="https://github.com/RikyIsola/RikyIsola.github.io/releases/download/1.0/clashroyalesimulator1.apk"download>Download Old</a>
+		<h1>ISLAND</h1>
+		<script src="js/scripts.js"></script>
+		<script>
+			if(document.it)
+			{
+				document.getElementById("text").innerHTML=
+					"Clash Royale simulator è una copia gratuita del famoso gioco clash royale."
+			}
+		</script>
+
+	</body>
 </html>

@@ -4,23 +4,33 @@
 		<link href="css/styles.css"rel="stylesheet"/>
 		<link rel="icon"type="image/png"href="images/island.png"/>
 		<title>ISLAND</title>
+		<link href='https://fonts.googleapis.com/css?family=ABeeZee'rel='stylesheet'/>
 	</head>
 	<body>
-		<div align="center">
-			<h1>ISLAND</h1>
-			<div>
-				<a id="contact"href="contact.html">CONTACT</a>
-				<a id="home"href="index.html">HOME</a>
-				<b id="about">ABOUT</b>
-			</div>
-			<p id="text">
-				I am Riccardo Isola a young software developer.<br>
-				The Innovation of my programs is that they have been created and tested from android and they are developed for android.<br>
-				In my opinion android is the operating system of the future because it brings a computer in everyone's pocket.<br>
-				'Android not just a phone'.
-			</p>
-			<img class="logo"src="images/island.png"/>
-			<h1>ISLAND</h1>
+		<img class="island"src="images/island.png"/>
+		<div class="home">
+			<a id="contact"href="contact.html">CONTACT</a>
+			<a id="home"href="index.html">HOME</a>
+			<b id="about">ABOUT</b>
 		</div>
+		<p id="text">
+			I am Riccardo Isola a young software developer.<br/>
+			The Innovation of some my programs is that they have been created and tested from android and they are developed for android.<br/>
+			In my opinion android is the operating system of the future because it brings a computer in everyone's pocket.<br/>
+			'Android not just a phone'.
+		</p>
+		<img class="logo"src="images/island.png"/>
+		<h1>ISLAND</h1>
+		<script src="js/scripts.js"></script>
+		<script>
+			if(document.it)
+			{
+				document.getElementById("text").innerHTML=
+					"Sono Riccardo Isola un giovane sviluppatore di software.<br/>"+
+					"L'innovazione di alcuni miei programmi è che sono stati creati e testati da Android e sono stati sviluppati per Android.<br/>"+
+					"Secondo me Android è il sistema operativo del futuro perché porta un computer nelle tasche di tutti.<br/>"+
+					"'Android non solo un telefono'.";
+			}
+		</script>
 	</body>
 </html>

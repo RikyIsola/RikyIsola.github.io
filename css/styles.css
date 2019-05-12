@@ -1,53 +1,46 @@
 body
 {
-	font-size:28pt;
-	margin:0pt;
+	padding:30pt;
+	padding-left:0pt;
+	padding-right:0pt;
 	text-align:center;
-	font-family:"serif";
-	/*max-width:320pt;*/
+	font-family:"ABeeZee";
+	font-size:200%;
+	margin:auto;
+	/*max-width:720pt;*/
+}
+div.home
+{
+	padding:30pt;
+	max-width:100%;
+	background-color:LightGrey;
 }
 div
 {
-	padding:1%;
-	border-style:ridge;
-	border-width:20pt;
-	border-radius:10%;
-	border-color:Blue;
-	background-color:LightBlue;
+	padding-top:10pt;
+	max-width:810pt;
+	margin:auto;
 }
 img
 {
-	width:100%;
+	width:230pt;
+}
+img.island
+{
+	width:80pt;
 }
 span
 {
-	padding:1%;
-	width:48%;
-	float:left;
+	width:265pt;
+	display:inline-block;
+	margin:auto;
 }
 a
 {
 	text-decoration:none;
-	font-size:129%;
-	color:DarkBlue;
-	padding:1%;
+	color:Grey;
 }
-a:active
+a:hover
 {
-	background-color:Blue;
-}
-b
-{
-	background-color:Blue;
-	font-size:129%;
-	color:DarkBlue;
-	padding:1%;
-}
-h1
-{
-	color:DarkBlue;
-}
-img.logo
-{
-	width:20%;
+	color:Black;	
 }
